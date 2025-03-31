@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="{{url_for('static',filename='styles.css')}}">
+    <title>ACOOFIT</title>
+</head>
+    <h1>ACOOFIT</h1>
+    <form action="/search"method='GET'style='display:end;justify-content:end;align-items:end;margin-bottom 10px;'>
+        <input type="text"name='query'placeholder='Search'required style="padding:10px;width:190px;margin:end 10px;">
+        <button type="submit"style='padding:10px 10px;'>Look after</button>
+    </form>
+    <div>
+        {%for product in product%}
+        <div>
+        <h1>{{product.name}}</h1>
+            <p>price:{{product.price}}Rs</p>
+            <a href="{{url_for('add_to_cart',product_id=product.id)}}">Add to cart</a>
+        </div>
+        {%endfor%}
+    </div>
+    <h1>Sporting Goods</h1>
+    </form>
+<div class="products">
+    <div class="product">
+        <h2>Product 1</h2>
+        <img src='https://varzeshazad.com/wp-content/uploads/2023/11/va-tredmill-shua-sh-t860-1.jpg'>
+        <h3>Products Description</h3>
+        <h4>Everywhere</h4>
+        <h5>price:50/000/000 Rs</h5>
+        <button>Add To Cart</button>
+        <h2>Product 2</h2>
+        <img src='https://cdnfa.com/bbsupp/1ce0/files/normal/3578965.jpg'>
+        <h3>Products Description</h3>
+        <h4>Everywhere</h4>
+        <h5>price:50/000/000 Rs</h5>
+        <button>Add To Cart</button>
+        <h2>Product 3</h2>
+        <img src='https://mininim.ir/wp-content/uploads/2021/01/barbell-buying-guide.jpg'>
+        <h3>Products Description</h3>
+        <h4>Everywhere</h4>
+        <h5>price:50/000/000 Rs</h5>
+        <button>Add To Cart</button>
+        <h2>Product 4</h2>
+        <img src='https://hamediansport.ir/wp-content/uploads/2023/09/%D8%B5%D9%81%D8%AD%D9%87-%D9%87%D8%A7%D9%84%D8%AA%D8%B1-%D9%88%D8%B2%D9%86%D9%87-%D9%87%D8%A7%D9%84%D8%AA%D8%B1-%D9%81%D8%B1%D9%85%D8%A7%D9%86%DB%8C.jpeg'>
+        <h3>Products Description</h3>
+        <h4>Everywhere</h4>
+        <h5>price:50/000/000 Rs</h5>
+        <button>Add To Cart</button>
+        <h2>Product 5</h2>
+        <img src='https://alamotsport.com/Uploads/Public/products/chandkare/60e8d79e7f2147ce8e3a45243a868fe5.jpg'>
+        <h3>Products Description</h3>
+        <h4>Everywhere</h4>
+        <h5>price:50/000/000 Rs</h5>
+        <button>Add To Cart</button>
+        <h2>Product 6</h2>
+        <img src='https://bahmansport.com/images/article/gym-equipment.jpg'>
+        <h3>Products Description</h3>
+        <h4>Everywhere</h4>
+        <h5>price:50/000/000 Rs</h5>
+        <button>Add To Cart</button>
+        <h2>Product 7</h2>
+        <img src='https://bikoplus.com/blog/wp-content/uploads/2024/02/Equipment-needed-for-the-gym.jpg'>
+        <h3>Products Description</h3>
+        <h4>Everywhere</h4>
+        <h5>price:50/000/000 Rs</h5>
+        <button>Add To Cart</button>
+        <h2>Product 8</h2>
+        <img src='https://losis.ir/wp-content/uploads/2024/06/akasdsasad.jpg'>
+        <h3>Products Description</h3>
+        <h4>Everywhere</h4>
+        <h5>price:50/000/000 Rs</h5>
+        <button>Add To Cart</button>
+    </div>
+    <h1>Sports Supplement</h1>
+    </form>
+<div class="products">
+    <div class="product">
+        <h2>Product 1</h2>
+        <img src='https://farahair.store/wp-content/uploads/2023/10/20231031_163859-scaled.jpg'>
+        <h3>Products Description</h3>
+        <h4>People over 18 years of age</h4>
+        <h5>price:500/000 Rs</h5>
+        <button>Add To Cart</button>
+        <h2>Product 2</h2>
+        <img src='https://hakimanteb.com/wp-content/uploads/2024/10/Magnesium-plus-D3-_-K2-scaled-2.jpg'>
+        <h3>Products Description</h3>
+        <h4>People over 18 years of age</h4>
+        <h5>price:500/000 Rs</h5>
+        <button>Add To Cart</button>
+        <h2>Product 3</h2>
+        <img src='https://hakimanteb.com/wp-content/uploads/2024/07/L-carnitin-1000shadow-1172x1536.png'>
+        <h3>Products Description</h3>
+        <h4>People over 18 years of age</h4>
+        <h5>price:500/000 Rs</h5>
+        <button>Add To Cart</button>
+        <h2>Product 4</h2>
+        <img src='https://dkstatics-public.digikala.com/digikala-products/226991bd8784ef435cf1c357c64bf1d4a835b571_1648303696.jpg?x-oss-process=image/resize,h_1600/quality,q_80'>
+        <h3>Products Description</h3>
+        <h4>People over 18 years of age</h4>
+        <h5>price:500/000 Rs</h5>
+        <button>Add To Cart</button>
+        <h2>Product 5</h2>
+        <img src='https://storage.khanoumi.com/ProductImages/Kalleh-Pro-Whey-Protein-Powder-1800-g-Khanoumi-202421892014742.jpg'>
+        <h3>Products Description</h3>
+        <h4>People over 18 years of age</h4>
+        <h5>price:500/000 Rs</h5>
+        <button>Add To Cart</button>
+        <h2>Product 6</h2>
+        <img src='https://hakimanteb.com/wp-content/uploads/2024/07/CREATINE3000-without-shadow-10-12-98websize-1024x940.jpg'>
+        <h3>Products Description</h3>
+        <h4>People over 18 years of age</h4>
+        <h5>price:500/000 Rs</h5>
+        <button>Add To Cart</button>
+        <h2>Product 7</h2>
+        <img src='https://shahabdaru.com/wp-content/uploads/2023/05/502-7257-1.jpg'>
+        <h3>Products Description</h3>
+        <h4>People over 18 years of age</h4>
+        <h5>price:500/000 Rs</h5>
+        <button>Add To Cart</button>
+    </div>
+    <h1>Comments</h1>
+    <form action="{{url_for('add_comment')}}"method='POST'>
+        <textarea name="comment"placeholder='Leave Your Comments' required></textarea>
+        <button type="submit">Post Comments</button>
+    </form>
+    <div>
+        {%for comment in comments%}
+        <div>{{comment}}</div>
+        {%endfor%}
+    </div>
+    <h1>Scoring</h1>
+    <form action="{{url_for('rate')}}"method='POST'>
+        <label>Rate</label>
+        <input type="radio"name='Awesome'value='1'>1<br>
+        <input type="radio"name='Great'value='2'>2<br>
+        <input type="radio"name='Good'value='3'>3<br>
+        <input type="radio"name='Too bad'value='4'>4<br>
+        <input type="radio"name='Bad'value='5'>5<br>
+        <button type="submit">Send</button>
+    </form>
+    <div>
+        <a href="{{url_for('register')}}">Sign Up</a>
+        <a href="{{url_for('login')}}">Login</a>
+    </div>
+    <h1>Cart</h1>
+    <div>
+        {%if session.cart%}
+        <ul>
+            {%for product_id in session.cart%}
+            {%for product in products%}
+            {%if product.id==product_id%}
+            <li>{{product.name}}-{{product.price}}Rs</li>
+            {%endif%}
+            {%endfor%}
+            {%endfor%}
+        </ul>
+        {%else%}
+        <p>The cart is empty</p>
+        {%endif%}
+    </div>
+</body>
+</html>
